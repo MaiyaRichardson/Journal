@@ -1,0 +1,4 @@
+[0m[[0m[31merror[0m] [0m[0mC:\Users\user\Desktop\journal\src\main\scala\Journal.scala:73:91: Unit does not take parameters[0m
+[0m[[0m[31merror[0m] [0m[0m      while (input.trim.toInt != rem)println("You did not enter in '1'. Please try again"){[0m
+[0m[[0m[31merror[0m] [0m[0m                                                                                          ^[0m
+[0m[[0m[31merror[0m] [0m[0mone error found[0m
