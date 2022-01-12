@@ -32,6 +32,7 @@ object Journal {
 
       println("Would you like to delete a previous entry? If so, press '1' and then enter in the ID for the entry you'd like to delete: " + "'\n Otherwise, please type 'Continue'")
       val resultSet2 = statement.executeQuery("SELECT * FROM Journal")
+      log.write("Executing 'SELECT * FROM Journal';\n")
 
       println()
       while ( resultSet2.next() ) {
@@ -44,6 +45,7 @@ object Journal {
       var rem = 1
 
       if (input.equals(cont)){
+
         println("Please enter an integer as your ID: ")
         var ID = scanner.nextInt()
 
@@ -63,15 +65,18 @@ object Journal {
         var JournalPrompt = scanner.nextLine()
         
         val resultSet1 = statement.executeUpdate("INSERT INTO Journal (ID, FirstName, DateMonth, DateDay, DateYear, JournalPrompt) VALUES ("+ID+",'"+FirstName+"', "+DateMonth+", "+DateDay+", "+DateYear+", '"+JournalPrompt+"');")
-        log.write("Executing 'INSERT INTO Journal (ID, FirstName, DateMonth, DateDay, DateYear, JournalPrompt) VALUES ("+ID+",'"+FirstName+"', "+DateMonth+", "+DateDay+", "+DateYear+", '"+JournalPrompt+"')';\n")
+        log.write("Executing 'INSERT INTO Journal (ID, FirstName, DateMonth, DateDay, DateYear, JournalPrompt) VALUES ("+ID+",'"+FirstName+"', "+DateMonth+", "+DateDay+", "+DateYear+", '"+JournalPrompt+"');\n")
          
       }else if (input.trim.toInt == rem) {
+
         println("Please enter an integer as your ID: ")
         var ID = scanner.nextInt()
+
         val deleteSet = statement.executeUpdate("DELETE FROM Journal WHERE ID = '"+ID+"';")
-        log.write("Executing 'DELETE FROM Journal WHERE ID = '"+ID+"'';\n")
+        log.write("Executing 'DELETE FROM Journal WHERE ID = '"+ID+"';\n")
 
       }else if (input.trim.toInt != rem){
+        
           println("You did not enter in '1'. Please try again " +'\n')
           main(args: Array[String])
       }
@@ -89,6 +94,7 @@ object Journal {
       case e: Exception => e.printStackTrace
     }
     connection.close()
-
+  log.close()
   }
+  
 }
