@@ -32,7 +32,6 @@ object Journal {
 
       println("Would you like to delete a previous entry? If so, press '1' and then enter in the ID for the entry you'd like to delete: " + "'\n Otherwise, please type 'Continue'")
       val resultSet2 = statement.executeQuery("SELECT * FROM Journal")
-      log.write("Executing 'SELECT * FROM Journal' ;\n")
 
       println()
       while ( resultSet2.next() ) {
