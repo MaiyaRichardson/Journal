@@ -1,4 +1,0 @@
-[0m[[0m[31merror[0m] [0m[0mC:\Users\user\Desktop\journal\src\main\scala\Journal.scala:95:3: not found: value log[0m
-[0m[[0m[31merror[0m] [0m[0m  log.close()[0m
-[0m[[0m[31merror[0m] [0m[0m  ^[0m
-[0m[[0m[31merror[0m] [0m[0mone error found[0m

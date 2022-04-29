@@ -1,7 +1,0 @@
-[0m[[0m[0mdebug[0m] [0m[0m> Exec(__runWatch console0, Some(80484321-ac00-4e10-8844-a86726831705), Some(CommandSource(console0)))[0m
-[0m[[0m[0mdebug[0m] [0m[0m> Exec(sbtStashOnFailure, None, Some(CommandSource(console0)))[0m
-[0m[[0m[0mdebug[0m] [0m[0m> Exec(__preWatch console0, None, Some(CommandSource(console0)))[0m
-[0m[[0m[0mdebug[0m] [0m[0m> Exec(run, None, Some(CommandSource(console0)))[0m
-[0m[[0m[0mdebug[0m] [0m[0mEvaluating tasks: Compile / run[0m
-[0m[[0m[0mdebug[0m] [0m[0mRunning task... Cancel: bloop.integrations.sbt.Offloader$$anon$1@517fbf62, check cycles: false, forcegc: true[0m
-[0m[[0m[0minfo[0m] [0m[0mcompiling 1 Scala source to C:\Users\user\Desktop\journal\target\scala-2.11\classes ...[0m
